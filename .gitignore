@@ -1,0 +1,79 @@
+# Node and Python artifacts
+node_modules/
+*.py[cod]
+__pycache__/
+*.egg-info/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Odoo-specific files
+*.log
+*.dat
+*.swp
+*.swo
+__pycache__/
+*.py[cod]
+*.swp
+*.swo
+.odoo
+*.oe_traceback
+*.dist-info/
+*.egg-info/
+*.egg
+
+# macOS system files
+.DS_Store
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+*.temp
+*.orig
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Logs
+*.log
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+.venv
+local_settings.py
+
+# Docker-related
+docker-compose.override.yml
+docker-compose*.yaml
+docker-compose*.yml
+.dockerignore
+docker-entrypoint.sh
+docker-compose.env
+*.iml
+
+# Odoo Docker volumes
+volumes/
+odoo-web-data/
+odoo-db-data/
+*.pid
+
+# Temporary files and folders
+tmp/
+temp/
+.cache/
+.build/
+.odoo_serverrc
+.envrc
