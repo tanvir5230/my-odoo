@@ -3,6 +3,7 @@ node_modules/
 *.py[cod]
 __pycache__/
 *.egg-info/
+venv/
 
 # Byte-compiled / optimized / DLL files
 *.pyc

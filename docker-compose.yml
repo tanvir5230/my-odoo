@@ -4,10 +4,12 @@ services:
   db:
     image: postgres:15
     container_name: odoo_db
+    ports:
+      - "5432:5432"
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=odoo
-      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_PASSWORD=myodoo
     volumes:
       - odoo-db-data:/var/lib/postgresql/data
     networks:
@@ -23,7 +25,7 @@ services:
     environment:
       - HOST=db
       - USER=odoo
-      - PASSWORD=odoo
+      - PASSWORD=myodoo
     volumes:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
