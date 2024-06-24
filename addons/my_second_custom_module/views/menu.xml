@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Root menu item -->
+    <menuitem id="my_module_root_menu" name="My Module" sequence="0"/>
+
+    <!-- Submenu item pointing to the model -->
+    <menuitem id="my_model_menu" name="My Models" parent="my_module_root_menu" action="action_my_model" sequence="1"/>
+</odoo>
