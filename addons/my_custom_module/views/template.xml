@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="test_template" name="Test Template">
+        <t t-call="website.layout">
+            <div class="container my-custom-style">
+                <h1>My Custom Model Records</h1>
+                <ul>
+                    <t t-foreach="records" t-as="record">
+                        <li>
+                            <strong><t t-esc="record.name"/></strong>: <t t-esc="record.description"/>
+                        </li>
+                    </t>
+                </ul>
+            </div>
+        </t>
+    </template>
+</odoo>

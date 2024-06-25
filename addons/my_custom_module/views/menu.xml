@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Define the root menu item -->
+    <menuitem id="menu_my_module_root" name="My Module" sequence="10"/>
+
+    <!-- Define a submenu item -->
+    <menuitem id="menu_my_submenu" name="Submenu" parent="menu_my_module_root" sequence="20"/>
+
+    <!-- Define a leaf menu item that opens the model view -->
+    <menuitem id="menu_my_models" name="My Models" parent="menu_my_submenu" action="action_my_model" sequence="30"/>
+
+</odoo>
